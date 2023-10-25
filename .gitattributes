@@ -1,2 +1,41 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+
+public class Car
+{
+    String carName;
+    String carColor;
+    int carNo;
+    static int cNo;
+    static
+    {
+        cNo = 3725;
+    }
+
+    {
+        cNo++;
+        carNo = cNo;
+    }
+    Car(String carName, String carColor)
+    {
+        this.carName = carName;
+        this.carColor = carColor;
+    }
+    void carDetails()
+    {
+        System.out.println("\ncarNo:"+"IND B10 "+carNo);
+        System.out.println("carName:"+carName);
+        System.out.println("carColor:"+carColor+"\n");
+    }
+
+}
+class CarDev
+{
+    public static void main(String[] args)
+    {
+        Car car1 = new Car("Tata","Blue");
+        car1.carDetails();
+        Car car2 = new Car("Tesla","Black");
+        car2.carDetails();
+        Car car3 = new Car("Toyota","Gray");
+        car3.carDetails();
+    }
+}
